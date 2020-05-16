@@ -1,0 +1,20 @@
+{
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		{
+			"language": "typescript",
+			"autoFix": true
+		},
+		{
+			"language": "typescriptreact",
+			"autoFix": true
+		}
+	],
+	"eslint.autoFixOnSave": true,
+	"editor.tabSize": 4,
+	"files.autoSave": "off",
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"prettier.eslintIntegration": true
+}
