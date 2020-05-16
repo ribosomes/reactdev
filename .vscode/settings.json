@@ -16,5 +16,8 @@
 	"files.autoSave": "off",
 	"javascript.preferences.quoteStyle": "single",
 	"typescript.preferences.quoteStyle": "single",
-	"prettier.eslintIntegration": true
+	"prettier.eslintIntegration": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
