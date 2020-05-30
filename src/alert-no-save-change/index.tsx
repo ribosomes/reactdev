@@ -9,6 +9,8 @@ const Index: React.FC = () => {
             <BackToIndex />
             <AlertNoSaveChangeContainer.Provider>
                 <Contents />
+                <hr />
+                <Contents />
             </AlertNoSaveChangeContainer.Provider>
         </>
     );

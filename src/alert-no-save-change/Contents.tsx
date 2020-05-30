@@ -1,14 +1,13 @@
 import React from 'react';
-import AlertNoSaveChangeContainer from './container';
+import useNoSaveChange from './hook';
 
 const Contents: React.FC = () => {
-    const showAlert = AlertNoSaveChangeContainer.useContainer();
-
-    //    window.onbeforeunload;
+    const showAlert = useNoSaveChange();
 
     return (
         <>
-            <p>show flag: {showAlert.shouldAlertShow ? 'o' : '-'}</p>
+            <p>id: {showAlert.uuid}</p>
+            <p>show flag: {showAlert.shouldShowAlert ? 'o' : '-'}</p>
             <button type="button" onClick={showAlert.setAlert}>
                 set alert
             </button>
