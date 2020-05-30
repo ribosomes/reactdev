@@ -9,7 +9,7 @@ const Routes: React.FC = () => {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact>
-                        Index
+                        - Pages
                         <ul>
                             <li>
                                 <Link to="/alert-no-save-change">alert no save changes</Link>
