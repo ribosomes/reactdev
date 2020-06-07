@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { createContainer } from 'unstated-next';
 
 type changeExistStatus = { [key: string]: boolean };
@@ -36,7 +36,6 @@ const useAlertNoSaveChange = () => {
             if (uuid in statusMap) {
                 delete statusMap[uuid];
                 const newStatus = { ...statusMap };
-
                 setStatusMap(newStatus);
                 controlOnbeforeunload(newStatus);
             }
